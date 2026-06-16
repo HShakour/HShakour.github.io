@@ -5,6 +5,7 @@ So this README is gonna serve as my to-do list for what I need to have.
 	- Contact info
 		- email, phone, etc.
 	- links to github, linkedin
+ 	- a link to my resume 
 	- a short bio about myself
 - portfolio page
 	- a page with a bunch of containers, each container hosting info about a project I've done
