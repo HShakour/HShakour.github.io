@@ -1,25 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Habib Shakour</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habib Shakour</title>
+
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <h1>
-        Habib Shakour
-    </h1>
-    <h2>
-        <a href="https://www.linkedin.com/in/habib-shakour-7b76892b7/">Linkedin</a>
-           
-        <a href="https://github.com/HShakour">Github</a>
-    </h2>
 
-    <p>
-        Hey there! I'm Habib, and you're currently looking at my website.<br>
-        You're currently looking at a rather ugly Times New Roman placeholder, which (hopefully) will get replaced in the coming few days.
-    </p>
-    <a href="about/">More about me</a>
-    <a href="projects/">Projects I host here</a>
-    <a href="portfolio/">My Portfolio</a>
+    <main class="container">
+
+        <section class="hero">
+
+            <p class="eyebrow">Software Engineer • [career interest? idk] • [?]</p>
+
+            <h1>Habib Shakour</h1>
+
+            <p class="subtitle">
+                Software Engineer with a Bachelors in Computer Science
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/habib-shakour-7b76892b7/" target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="https://github.com/HShakour" target="_blank">
+                    GitHub
+                </a>
+            </div>
+
+        </section>
+
+        <section class="about-preview">
+
+            <h2>Hey there, welcome to my website!</h2>
+
+            <p>
+            </p>
+
+            <p>
+                Hey there, welcome to my website! I'm an aspiring software developer
+                who recently graduted from the University of Michigan. I've worked with numerous 
+                facets of computer science during my time as a student, including software engineering, 
+                AI, robotics, full stack development, and cybersecurity (among other things).
+            </p>
+
+        </section>
+
+        <section class="navigation">
+
+            <a href="about/" class="card">
+                <h3>About Me</h3>
+                <p>
+                    More about myself and my interests (career and otherwise).
+                </p>
+            </a>
+            <!--
+            <a href="projects/" class="card">
+                <h3>Projects</h3>
+                <p>
+                    Applications, experiments, and software I've built.
+                </p>
+            </a>
+            -->
+            <a href="portfolio/" class="card">
+                <h3>Portfolio</h3>
+                <p>
+                    A list of the projects I've completed over the years.
+                </p>
+            </a>
+
+            <a href="resume.pdf" class="card">
+                <h3>Resume</h3>
+                <p>If you want to see/download my resume.</p>
+            </a>
+
+        </section>
+
+        <footer>
+            <p>Built by Habib Shakour</p>
+        </footer>
+
+    </main>
+
 </body>
+</html>
