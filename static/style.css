@@ -139,3 +139,65 @@ footer {
 
     color: var(--muted);
 }
+
+/* ---------- Internal Pages ---------- */
+
+.page-header {
+    padding: 5rem 0 3rem 0;
+}
+
+.home-link {
+    display: inline-block;
+
+    color: var(--accent);
+
+    text-decoration: none;
+
+    margin-bottom: 2rem;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+.page-header h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.content-card {
+    background: var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    padding: 2rem;
+
+    margin-bottom: 4rem;
+}
+
+.content-card p {
+    color: var(--muted);
+    margin-bottom: 1rem;
+}
+
+.content-card ul {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: var(--muted);
+}
+
+.content-card li {
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 1.5rem;
+
+    margin-bottom: 4rem;
+}

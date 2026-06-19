@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About Habib Shakour</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Habib Shakour</title>
+
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-    <a href="/">
-        <h1>Habib Shakour</h1>
-    </a>
-    <h2>
-        More About Myself
-    </h2>
-    <p>
-        I guess the main point of this page would be a longer blurb about myself. <br>
-        Unlike the index (main) page, this could go more in depth into what I want to do, <br>
-        what interests me, etc.
-    </p>
+
+    <main class="container">
+
+        <header class="page-header">
+            <a href="../" class="home-link">
+                ← Habib Shakour
+            </a>
+
+            <p class="eyebrow">About</p>
+
+            <h1>More About Me</h1>
+
+            <p class="subtitle">
+                A little more about who I am, what interests me,
+                and where I'm headed.
+            </p>
+        </header>
+
+        <section class="content-card">
+            <p>
+                I guess the main point of this page would be a longer
+                blurb about myself.
+            </p>
+
+            <p>
+                Unlike the homepage, this section can go into more detail
+                about my background, interests, goals, and experiences.
+            </p>
+
+            <p>
+                Some topics I'd eventually like to include:
+            </p>
+
+            <ul>
+                <li>How I got interested in computer science</li>
+                <li>Machine learning and AI interests</li>
+                <li>Software engineering projects</li>
+                <li>Career goals</li>
+                <li>Things I'm currently learning</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Built by Habib Shakour</p>
+        </footer>
+
+    </main>
+
 </body>
+</html>
