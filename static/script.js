@@ -9,7 +9,6 @@ const photos = [
     base + "photo3.jpeg",
     base + "photo4.jpeg",
     base + "photo5.jpeg",
-    base + "photo6.JPG",
     base + "photo7.jpeg",
     base + "photo8.JPG",
     base + "photo9.JPG",
