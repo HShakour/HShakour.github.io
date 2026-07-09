@@ -201,3 +201,69 @@ footer {
 
     margin-bottom: 4rem;
 }
+
+/* Photo Carousel */
+
+.carousel-section {
+    margin-bottom: 5rem;
+}
+
+.carousel-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.carousel {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 700px;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 1px solid var(--border);
+
+    transition: opacity 0.3s;
+}
+
+.carousel-btn {
+    position: absolute;
+
+    background: rgba(15, 23, 42, 0.8);
+
+    color: white;
+
+    border: none;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.carousel-btn:hover {
+    background: var(--accent);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
