@@ -204,27 +204,92 @@ footer {
 
 /* Photo Carousel */
 
+/* ---------- Photo Carousel ---------- */
+
 .carousel-section {
     margin-bottom: 5rem;
 }
 
 .carousel-section h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
+
+/* outer container */
 
 .carousel {
-    position: relative;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    margin-top: 2rem;
+
+    mask-image:
+        linear-gradient(
+            to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent
+        );
+
+    -webkit-mask-image:
+        linear-gradient(
+            to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent
+        );
 }
 
-.carousel img {
-    width: 100%;
-    max-width: 700px;
+/* duplicated image strips */
 
-    height: 450px;
+.group {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1.25rem;
+
+    padding-right: 1.25rem;
+
+    flex-shrink: 0;
+
+    animation: scroll 45s linear infinite;
+}
+
+/* pause when hovering */
+
+.carousel:hover .group {
+    animation-play-state: paused;
+}
+
+/* individual cards */
+
+.carousel .card {
+    flex: 0 0 auto;
+
+    padding: 0;
+
+    background: none;
+
+    border: none;
+
+    transform: none;
+}
+
+.carousel .card:hover {
+    border: none;
+    transform: none;
+}
+
+/* images */
+
+.card-img {
+    width: 220px;
+    height: 220px;
 
     object-fit: cover;
 
@@ -232,38 +297,44 @@ footer {
 
     border: 1px solid var(--border);
 
-    transition: opacity 0.3s;
+    display: block;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-.carousel-btn {
-    position: absolute;
+.card-img:hover {
+    transform: scale(1.05);
 
-    background: rgba(15, 23, 42, 0.8);
+    border-color: var(--accent);
 
-    color: white;
-
-    border: none;
-
-    width: 50px;
-    height: 50px;
-
-    border-radius: 50%;
-
-    font-size: 1.5rem;
-
-    cursor: pointer;
-
-    transition: 0.2s;
+    box-shadow:
+        0 0 25px rgba(56, 189, 248, 0.25);
 }
 
-.carousel-btn:hover {
-    background: var(--accent);
+/* animation */
+
+@keyframes scroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
 }
 
-.prev {
-    left: 20px;
-}
+/* mobile */
 
-.next {
-    right: 20px;
+@media (max-width: 768px) {
+
+    .card-img {
+        width: 150px;
+        height: 150px;
+    }
+
 }
