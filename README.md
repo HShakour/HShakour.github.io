@@ -1,4 +1,4 @@
-As of right now (6/16/2026), this website is far from complete.
+As of right now (7/20/2026), this website is far from complete.
 So this README is gonna serve as my to-do list for what I need to have.
  - index page, containing:
 	- My name (duh)
